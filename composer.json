@@ -1,0 +1,26 @@
+{
+  "name": "mikica/zf2-translate-plugin",
+  "description": "Simple translation controller plugin.",
+  "keywords": ["zf2", "translator", "zend"],
+  "type": "plugin",
+  "homepage": "http://www.github.com/mikicaivosevic/zf2-translate-plugin",
+  "require": {
+    "php": ">=5.4",
+    "zendframework/zendframework": "2.5.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mikica Ivosevic",
+      "email": "mikica.ivosevic@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "ZfTranslate": "src/"
+    },
+    "classmap": [
+      "src/"
+    ]
+  }
+}
