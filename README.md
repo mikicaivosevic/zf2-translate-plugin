@@ -12,7 +12,7 @@ You need to register new module. Add in file config/application.config.php:
 ),
 ```
 
-Voila! The module is ready to use. 
+The module is ready to use. 
 
 ##Usage in controller
 
