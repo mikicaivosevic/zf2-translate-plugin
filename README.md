@@ -1,4 +1,4 @@
-#Simple translation controller plugin.
+#Simple translation controller plugin
 
 ##Installation
 `composer install mikica/zf2-translate-plugin`
