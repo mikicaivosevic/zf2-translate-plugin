@@ -1,6 +1,6 @@
-#Simple translation controller plugin
+# Simple translation controller plugin
 
-##Installation
+## Installation
 `composer install mikica/zf2-translate-plugin`
 
 You need to register new module. Add in file config/application.config.php: 
@@ -14,7 +14,7 @@ You need to register new module. Add in file config/application.config.php:
 
 The module is ready to use. 
 
-##Usage in controller
+## Usage in controller
 
 ```php
 <?php
