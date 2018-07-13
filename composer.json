@@ -5,8 +5,9 @@
   "type": "plugin",
   "homepage": "http://www.github.com/mikicaivosevic/zf2-translate-plugin",
   "require": {
-    "php": ">=5.4",
-    "zendframework/zendframework": "2.5.*"
+    "php": ">=5.6",
+    "zendframework/zend-mvc": "^3.0",
+    "zendframework/zend-i18n": "^2.6"
   },
   "license": "MIT",
   "authors": [

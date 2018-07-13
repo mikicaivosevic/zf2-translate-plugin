@@ -1,21 +1,16 @@
 <?php
 namespace ZfTranslate\Factory;
 
-use Zend\Mvc\I18n\Translator;
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Interop\Container\ContainerInterface;
+use Zend\I18n\Translator\TranslatorInterface;
+use Zend\ServiceManager\Factory\FactoryInterface;
 use ZfTranslate\Controller\Plugin\TranslatePlugin;
 
 class TranslatePluginFactory implements FactoryInterface
 {
-    public function createService(ServiceLocatorInterface $serviceLocator)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        /** @var ServiceLocatorInterface $sm */
-        $sm = $serviceLocator->getServiceLocator();
-        /** @var Translator $translator */
-        $translator = $sm->get('MvcTranslator');
-
+        $translator = $container->get(TranslatorInterface::class);
         return new TranslatePlugin($translator);
     }
-
 }
